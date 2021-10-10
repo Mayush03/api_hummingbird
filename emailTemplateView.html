@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hummingbird - Email template</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body{
+background: #F2F3F4 !important;
+}
+
+.email-message-container{
+background: #ffffff !important;
+padding: 10px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+max-width: 60%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5px;
+}
+
+img{
+margin-top: 20px;
+width: 40px !important;
+height: 40px !important;
+}
+
+.logo-text{
+font-family: 'Righteous', cursive;
+font-size: 23px;
+margin-top: 0;
+color: #F35431 !important;
+}
+
+#content-text{
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 15px;
+color: #333;
+}
+
+#content-text-msg{
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 12px;
+color: #333;
+margin-top:0;
+}
+
+#passcode-box{
+background:#F4F6F6;
+border: 1.5px solid #B2BABB;
+border-radius: 5px;
+padding: 15px;
+font-size: 25px;
+font-weight: "bold";
+max-width: 150px;
+}
+
+#signature-text{
+font-size: 11px;
+font-weight: "bold";
+font-family: 'Noto Sans JP', sans-serif;
+color:#707B7C;
+}
+
+</style>
+</head>
+<body>
+
+<div class="page-container">
+
+<center>
+<img src='http://192.168.1.7/hummingbird/assets/logo2.png' />
+<p class="logo-text">hummingbird</p>
+</center>
+
+<div class="email-message-container">
+<center>
+<p id="content-text">Hello, {fullname}</p>
+<p id="content-text">Welcome to hummingbird, your destination for daily inspiration and short stories!</p>
+<p id="content-text">To keep your account safe and secure we are sharing a one time passcode with you.</p>
+<p id="passcode-box">{passcode}</p>
+<p id="content-text-msg">Please do not share this with anyone</p>
+</center>
+</div>
+<center>
+<p id="signature-text">&copy; 2021 hummingbird<p>
+<p id="signature-text">Please do not reply to this email<p>
+</center>
+
+</div>
+
+
+</body>
+</html>
