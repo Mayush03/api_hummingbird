@@ -3,7 +3,7 @@
 include 'connection.php';
 $con = mysqli_connect($servername,$username,$password,$database);
 
-$allStories = "SELECT * FROM stories ORDER BY rand()";
+$allStories = "SELECT * FROM stories ORDER BY 1 DESC";
 $loadStories = mysqli_query($con,$allStories);
 $items = [];
 if($loadStories->num_rows > 0){
